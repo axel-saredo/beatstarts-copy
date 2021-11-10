@@ -11,19 +11,16 @@ export class File {
   name: string;
 
   @Prop({ required: true })
-  originalName: string;
-
-  @Prop({ required: true })
   extension: string;
 
   @Prop({ required: true })
   path: string;
 
-  @Prop({ required: true })
-  type: string;
-
   @Prop()
   contentType: string;
+
+  @Prop()
+  type: string;
 }
 
 export const FileSchema = SchemaFactory.createForClass(File);

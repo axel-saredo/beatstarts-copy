@@ -36,5 +36,6 @@ import * as bcrypt from 'bcrypt';
   ],
   providers: [UserService],
   controllers: [UserController],
+  exports: [UserService],
 })
 export class UserModule {}

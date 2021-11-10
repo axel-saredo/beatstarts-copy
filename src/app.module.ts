@@ -6,6 +6,7 @@ import { TrackModule } from './track/track.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { FileModule } from './file/file.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     UserModule,
     TrackModule,
     FileModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService, ConfigService],
